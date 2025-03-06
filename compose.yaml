@@ -1,0 +1,12 @@
+services:
+  julia-notebook:
+    build: ./juliaNotebook
+    volumes:
+      - ./juliaNotebook:/home/jovyan/app
+    ports: 
+      - "8888:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=julia
+      - GRANT_SUDO=yes
+    stop_grace_period: 1s
