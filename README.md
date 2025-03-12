@@ -6,4 +6,4 @@ This project runs Jupyter Notebook with Julia inside a Docker container.
 
 ## Completed Tasks Raports (in Polish):
 
-- [Lab 1](./juliaNotebook/Lab1/Assignment/Lab1.html)
+- [Lab 1](./juliaNotebook/Lab1/Assignment/Lab1.ipynb)
