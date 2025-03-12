@@ -10,5 +10,5 @@ RUN cp -r julia-1.11.3 /opt/
 RUN ln -s /opt/julia-1.11.3/bin/julia /usr/local/bin/julia
 
 USER jovyan
-
-RUN julia -e 'using Pkg; Pkg.add("IJulia")'
+COPY install.jl install.jl
+RUN julia install.jl
