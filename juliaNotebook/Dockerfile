@@ -4,5 +4,7 @@ USER root
 RUN apt-get install -y curl
 
 USER jovyan
-COPY install.jl install.jl
-RUN julia install.jl
+# Labs 1-4
+RUN julia -e 'using Pkg; Pkg.add.(["IJulia", "DataFrames", "Statistics", "Plots", "QuadGK", "CSV", "Interpolations", "Polynomials"])'
+# Lab 5
+RUN julia -e 'using Pkg; Pkg.add.(["TaylorSeries"])'
