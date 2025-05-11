@@ -7,4 +7,4 @@ USER jovyan
 # Labs 1-4
 RUN julia -e 'using Pkg; Pkg.add.(["IJulia", "DataFrames", "Statistics", "Plots", "QuadGK", "CSV", "Interpolations", "Polynomials"])'
 # Lab 5-8
-RUN julia -e 'using Pkg; Pkg.add.(["TaylorSeries", "SpecialPolynomials", "Roots", "ForwardDiff"])'
+RUN julia -e 'using Pkg; Pkg.add.(["TaylorSeries", "SpecialPolynomials", "Roots", "ForwardDiff", "Colors"])'
