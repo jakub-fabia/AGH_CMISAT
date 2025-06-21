@@ -10,3 +10,5 @@ RUN julia -e 'using Pkg; Pkg.add.(["IJulia", "DataFrames", "Statistics", "Plots"
 RUN julia -e 'using Pkg; Pkg.add.(["TaylorSeries", "SpecialPolynomials", "Roots", "ForwardDiff", "Colors"])'
 # Lab 11
 RUN julia -e 'using Pkg; Pkg.add.(["StaticArrays", "StatsPlots"])'
+# Lab 12
+RUN julia -e 'using Pkg; Pkg.add.(["FFTW"])'
